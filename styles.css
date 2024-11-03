@@ -21,7 +21,7 @@ body {
   flex-direction: row;
   width: 100%;
   max-width: 800px;
-  background-color: #faf8f8;
+  background-color: #10003b;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
   overflow: hidden;
@@ -40,6 +40,7 @@ body {
 #display-role {
   color: rgb(207, 207, 207);
   font-size: medium;
+  font-style:unset;
 }
 
 .right-section {
@@ -151,28 +152,54 @@ p {
   margin-bottom: 12px;
   font-size: 1.1em;
 }
+
+
 @media screen and (max-width: 600px) {
+  body{
+    width: fit-content;
+  }
   .left-section {
-    width: 60%;
-    padding: 15px;
+
+      width: 50%;
   }
 
   .right-section {
-    width: 100%;
-    padding: 10px;
+      width: 60%;
+      padding: 10px;
+  }
+  #display-role {
+    font-size: small;
   }
 
-  h2,
-  p {
-    font-size: 0.625rem;
+  h2, p {
+      font-size: 0.8em;
   }
+
+  .contact p {
+    font-size: xx-small;
+
+  }
+  .contact,
+.skills,
+.languages{
+  font-size: xx-small;
+  width: 110px;
+}
 
   .section h3 {
-    font-size: 1em;
+      font-size: 1em;
+  }
+  .profile-picture img {
+    width: 100px;
+    height: 100px;
+  }
+  body {
+    width: 475px;
   }
 
   button {
-    padding: 6px 12px;
-    font-size: 12px;
+      padding: 6px 12px;
+      font-size: 12px;
   }
+
 }
